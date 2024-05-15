@@ -1,5 +1,13 @@
 <?php 
 	
+	/**
+	 * Función que simula el comportamiento de una calculadora.
+	 *
+	 * @param float $termino1 El primer término numérico.
+	 * @param float $termino2 El segundo término numérico.
+	 * @param string $operaciones La operación matemática a realizar. Puede ser "suma", "resta", "multiplicacion", "division", "porcentaje", "potencia" o "raiz".
+	 * @return void Esta función no devuelve ningún valor directamente, pero muestra el resultado de la operación en la pantalla.
+	 */
 	function calculadora($termino1, $termino2, $operaciones){
 
 		$resultado = 0;
@@ -34,11 +42,12 @@
 		}
 	}
 
+	// Obtener los datos del formulario
 	$termino1 = $_POST['termino1'];
 	$termino2 = $_POST['termino2'];
 	$operaciones = $_POST['operaciones'];
 
-	// Llama a la función calculadora
+	// Llamar a la función calculadora
 	calculadora($termino1, $termino2, $operaciones);
 
 ?>
