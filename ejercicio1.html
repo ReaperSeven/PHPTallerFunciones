@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicio 1</title>
+</head>
+<body>
+	<h1>Ejercicio 1</h1>
+	<p>Construir una función que simule el comportamiento de una calculadora.</p>
+	<ul>
+		<li>Debe realizar las cuatro operaciones matemáticas básicas.</li>
+		<li>Calcular el porcentaje.</li>
+		<li>Calcular la potencia.</li>
+		<li>Calcular la raíz cuadrada.</li>
+	</ul>
+	<p>Esta información debe ser retornada al usuario mostrándola en la pantalla.</p><br>
+
+	<table border="double" cellpadding="15px">
+	<thead>
+	  <tr>
+	    <th colspan="2">Operaciones Matemáticas</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>
+	    	<form action="ejercicio1.php" method="POST">
+	    		<label>1er término</label>
+	    		<input type="number" name="termino1">
+	    		<br><br>
+	    		<label>2do término</label>
+	    		<input type="number" name="termino2">
+	    		<br><br>
+	    		<button type="submit">Calcular</button>
+	    </td>
+	    <td>
+	    		<input type="radio" name="operaciones" value="suma">
+	    		<label for="operaciones">Sumar</label><br>
+	    		<input type="radio" name="operaciones" value="resta">
+	    		<label for="operaciones">Restar</label><br>
+	    		<input type="radio" name="operaciones" value="multiplicacion">
+	    		<label for="operaciones">Multiplicar</label><br>
+	    		<input type="radio" name="operaciones" value="division">
+	    		<label for="operaciones">Dividir</label><br>
+	    		<input type="radio" name="operaciones" value="porcentaje">
+	    		<label for="operaciones">Porcentaje</label><br>
+	    		<input type="radio" name="operaciones" value="potencia">
+	    		<label for="operaciones">Potencia</label><br><input type="radio" name="operaciones" value="raiz">
+	    		<label for="operaciones">Raíz cuadrada</label><br>
+	    	</form>
+	    </td>
+	  </tr>
+	</tbody>
+	</table>
+</body>
+</html>
