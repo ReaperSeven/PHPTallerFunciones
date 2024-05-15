@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>Ejercicio 4</h1>
+    <p>Construir una función que calcule y retorne el pago quincenal de un empleado teniendo en cuenta el salario mínimo mensual es de $1.300.000, el subsidio de transporte $106.454, el descuento del 8% por concepto de seguridad social y un descuento que pueda o no tener el empleado por un adelanto solicitado (en el formulario deberá preguntar si tiene descuentos).</p><hr>
+
+    <!-- Formulario para ingresar los datos del empleado -->
+    <form action="ejercicio4.php" method="POST">
+        <label>Ingrese su nombre</label>
+        <br>
+        <input type="text" name="nombre">
+        <br><br>
+        <label>¿Ha realizado adelantos?</label>
+        <br>
+        <input type="radio" name="adelantos" value="si">
+        <label for="adelantos">Sí</label>
+        <input type="radio" name="adelantos" value="no">
+        <label for="adelantos">No</label>
+        <br><br>
+        <label>Monto de adelantos</label>
+        <br>
+        <input type="number" name="descontar">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
